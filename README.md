@@ -20,7 +20,7 @@ This app uses computer vision with YOLOv8 to detect microplastics in everyday ob
 ![Prizes](images/prizes.jpg)
 
 🎥 **Live Demo Video:**  
-[Watch how SafeSwap works in real time!](link-to-your-demo-video)
+[Watch how SafeSwap works in real time!](https://youtu.be/fTq29E8R6cs)
 
 ---
 
@@ -35,7 +35,7 @@ It’s designed to raise awareness about microplastic pollution through interact
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/yourusername/safeswap.git
+   git clone https://github.com/2fujisawa/safeswap.git
    cd safeswap
    ```
 
@@ -55,18 +55,6 @@ It’s designed to raise awareness about microplastic pollution through interact
    python app.py
    ```
    Open your browser at [http://127.0.0.1:5000](http://127.0.0.1:5000)
-
----
-
-## 🙌 Special Thanks
-
-This project was built with the amazing support of Chapman’s Hackathon organizers and mentors.
-
----
-
-## 📄 License
-
-Add your license here (MIT, Apache 2.0, etc).
 
 ---
 
