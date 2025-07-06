@@ -21,8 +21,9 @@ This app uses computer vision with YOLOv8 to detect microplastics in everyday ob
 </p>
 
 <p align="center">
+ <img src="images/winner234.jpeg" alt="Winning Photo 2" width="400"/>
   <img src="images/winner1.JPG" alt="Winning Photo 1" width="300"/>
-  <img src="images/winner234.jpeg" alt="Winning Photo 2" width="300"/>
+  
 </p>
 
 🎥 **Live Demo Video:**  
