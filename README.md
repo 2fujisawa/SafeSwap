@@ -12,33 +12,23 @@ It leverages state-of-the-art computer vision with YOLOv8 to help users detect m
 - 🎉 **Winner of First Place (Most Popular Choice & Sustainability)** at Chapman's Hackathon 2025.
 - 🏅 SafeSwap is an interactive web app that helps people detect microplastics in daily items to reduce health risks like dementia and more, using YOLOv8 for computer vision.
 
----
-
-## 📸 Demo & Media
-
-
 <p align="center">
   <img src="images/homepage.jpeg" alt="Home Page" width="500"/>
 </p>
 
 <p align="center">
- <img src="images/winner234.jpeg" alt="Winning Photo 2" width="400"/>
+  <img src="images/winner234.jpeg" alt="Winning Photo 2" width="300"/>
   <img src="images/winner1.JPG" alt="Winning Photo 1" width="300"/>
-  
 </p>
 
 🎥 **Live Demo Video:**  
 [Watch how SafeSwap works in real time!](https://youtu.be/fTq29E8R6cs)
 
-🔗 **Check out our LinkedIn feature:**  
-[Chapman CS Club PantherHacks Post](https://www.linkedin.com/posts/chapman-computer-science-club_pantherhacks-pantherhacks2025-hackathon-ugcPost-7322712880305295361-AoyD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAERIrrMBhpriHi6tBcmDMns7PLOnGhRIStE)
-
 ---
 
 ## 🚀 What is SafeSwap?
 
-SafeSwap uses YOLOv8 object detection to identify common household objects and estimate the amount of microplastics associated with each item.  
-It’s designed to raise awareness about microplastic pollution through interactive scanning.
+SafeSwap combines YOLOv8 object detection and a user-friendly web interface to identify everyday household items and estimate their microplastic content. It empowers users to make informed, sustainable choices while raising awareness about hidden microplastic pollution and its potential health impacts.
 
 ---
 
@@ -60,8 +50,6 @@ It’s designed to raise awareness about microplastic pollution through interact
 
 ---
 
-
----
 
 ## 👥 Team Members
 
