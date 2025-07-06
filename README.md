@@ -16,52 +16,14 @@ This app uses computer vision with YOLOv8 to detect microplastics in everyday ob
 ## 📸 Demo & Media
 
 
+<p align="center">
+  <img src="images/homepage.jpeg" alt="Home Page" width="400"/>
+</p>
 
-<style>
-  .slideshow-container {
-    position: relative;
-    max-width: 300px;
-    margin: auto;
-  }
-
-  .slides {
-    display: none;
-    width: 100%;
-  }
-
-  .fade {
-    animation-name: fade;
-    animation-duration: 1s;
-  }
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-</style>
-
-<div class="slideshow-container">
-  <img class="slides fade" src="images/homepage.jpeg" alt="Home Page" />
-  <img class="slides fade" src="images/winner1.JPG" alt="Winning Photo 1" />
-  <img class="slides fade" src="images/winner234.jpeg" alt="Winning Photo 2" />
-</div>
-
-<script>
-  let slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("slides");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 1000); // Change image every 1 second
-  }
-</script>
+<p align="center">
+  <img src="images/winner1.JPG" alt="Winning Photo 1" width="250"/>
+  <img src="images/winner234.jpeg" alt="Winning Photo 2" width="250"/>
+</p>
 
 🎥 **Live Demo Video:**  
 [Watch how SafeSwap works in real time!](https://youtu.be/fTq29E8R6cs)
