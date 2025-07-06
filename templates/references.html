@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>References - SafeSwap</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-color: #ffffff;
+        }
+        header {
+            background-color: #0b3d0b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            font-weight: bold;
+            font-size: 1rem;
+            z-index: 10;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .logo-container img {
+            height: 40px;
+        }
+        .logo-container span {
+            font-size: 1.5rem;
+            color: white;
+        }
+        header nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transform: translateX(100px);
+            opacity: 0;
+            transition: transform 0.6s ease, opacity 0.6s ease;
+        }
+        header nav a.show {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        header nav a:hover {
+            background-color: #388e3c;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+        main {
+            flex: 1;
+            padding: 2rem 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: #111111;
+        }
+        ul {
+            list-style: disc;
+            padding-left: 2rem;
+            text-align: left;
+            max-width: 800px;
+            font-size: 1.1rem;
+            color: #333333;
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 1.5rem;
+        }
+        ul a {
+            color: #1e88e5;
+            text-decoration: underline;
+        }
+        ul a:hover {
+            color: #1565c0;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='safeswap.png') }}" alt="SafeSwap Logo">
+        <span>SafeSwap</span>
+    </div>
+    <nav id="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/history">Scan History</a>
+        <a href="/future-work">Future Work</a>
+        <a href="/references">References</a>
+     </nav>
+</header>
+
+<main>
+    <h1>References</h1>
+
+    <ul>
+        <li><b>Bottled Water Microplastic Contamination:</b> <a href="https://pirg.org/articles/does-bottled-water-contain-plastic-particles/" target="_blank">U.S. PIRG (2024)</a></li>
+
+        <li><b>Plastic Utensils and Kitchen Microplastic Sources:</b> 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/38641111/" target="_blank">PubMed</a> | 
+            <a href="https://www.researchgate.net/publication/382541572_Beyond_the_Food_on_Your_Plate" target="_blank">ResearchGate</a>
+        </li>
+
+        <li><b>Disposable Drink Cups:</b> 
+            <a href="https://www.mdpi.com/2076-3417/12/5/2535" target="_blank">MDPI</a> | 
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10076389/" target="_blank">PMC NIH</a> | 
+            <a href="https://link.springer.com/article/10.1007/s11356-023-25433-7" target="_blank">SpringerLink</a>
+        </li>
+
+        <li><b>Mobile Phone Cases:</b> <a href="https://www.sciencedirect.com/science/article/pii/S0304389422017058" target="_blank">ScienceDirect</a></li>
+
+        <li><b>Toothbrush Microplastic Shedding:</b> <a href="https://www.sciencedirect.com/science/article/pii/S0269749123015129" target="_blank">ScienceDirect</a></li>
+    </ul>
+</main>
+
+<script>
+window.addEventListener('load', () => {
+    const navbarLinks = document.querySelectorAll('#navbar a');
+    navbarLinks.forEach((link, index) => {
+        setTimeout(() => {
+            link.classList.add('show');
+        }, index * 200);
+    });
+});
+</script>
+
+</body>
+</html>

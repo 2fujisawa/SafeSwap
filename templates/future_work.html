@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Future Work - SafeSwap</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-color: #ffffff;
+        }
+        header {
+            background-color: #0b3d0b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            font-weight: bold;
+            font-size: 1rem;
+            z-index: 10;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .logo-container img {
+            height: 40px;
+        }
+        .logo-container span {
+            font-size: 1.5rem;
+            color: white;
+        }
+        header nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transform: translateX(100px);
+            opacity: 0;
+            transition: transform 0.6s ease, opacity 0.6s ease;
+        }
+        header nav a.show {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        header nav a:hover {
+            background-color: #388e3c;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+        main {
+            flex: 1;
+            padding: 2rem 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: #111111;
+        }
+        section {
+            max-width: 800px;
+            text-align: left;
+            font-size: 1.1rem;
+            color: #333333;
+            line-height: 1.8;
+        }
+        p {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='safeswap.png') }}" alt="SafeSwap Logo">
+        <span>SafeSwap</span>
+    </div>
+    <nav id="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/history">Scan History</a>
+        <a href="/future-work">Future Work</a>
+        <a href="/references">References</a>
+     </nav>
+</header>
+
+<main>
+    <h1>Future Work</h1>
+
+    <section>
+        <p>Future development will expand the database to include a wider range of products and material types.</p>
+        <p>We plan to optimize SafeSwap for embedded platforms like Raspberry Pi to enable field applications at grocery markets, restaurants, and waste sites.</p>
+        <p>Integration with cloud-based data aggregation will enable large-scale mapping of microplastic contamination patterns and support policymaking efforts.</p>
+        <p>Additional improvements will focus on better material classification, object segmentation, and real-time feedback for an enhanced user experience.</p>
+    </section>
+</main>
+
+<script>
+window.addEventListener('load', () => {
+    const navbarLinks = document.querySelectorAll('#navbar a');
+    navbarLinks.forEach((link, index) => {
+        setTimeout(() => {
+            link.classList.add('show');
+        }, index * 200);
+    });
+});
+</script>
+
+</body>
+</html>
