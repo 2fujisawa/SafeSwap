@@ -15,9 +15,12 @@ This app uses computer vision with YOLOv8 to detect microplastics in everyday ob
 
 ## 📸 Demo & Media
 
-![Home Page](images/homepage.jpeg)
-![Winning Photo 1](images/winner1.JPG)
-![Winning Photo 2](images/winner234.jpeg)
+
+<p align="center">
+  <img src="images/homepage.jpeg" alt="Home Page" width="300"/>
+  <img src="images/winner1.JPG" alt="Winning Photo 1" width="300"/>
+  <img src="images/winner234.jpeg" alt="Winning Photo 2" width="300"/>
+</p>
 
 🎥 **Live Demo Video:**  
 [Watch how SafeSwap works in real time!](https://youtu.be/fTq29E8R6cs)
